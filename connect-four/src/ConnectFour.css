@@ -1,0 +1,78 @@
+.content {
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.game-title {
+    margin: 0;
+
+}
+
+.current-player {
+    margin: 0;
+    font-size: 20px;
+}
+
+.win {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 300px;
+    padding: 15px;
+    border: 1px solid;
+    border-radius: 10px;
+    background-color: aliceblue;
+}
+
+.table {
+    display: grid;
+    grid-template-columns: repeat(7, 50px);
+    width: 380px;
+    gap: 5px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 3px solid;
+    border-radius: 15px;
+}
+
+.cols {
+    height: 20px;
+    cursor: pointer;
+    background-image: url(./assets/arrow.svg);
+    background-size: 20px;
+    background-repeat: no-repeat;
+    background-position: top center;
+    transition: background-image 0.2s ease-in;
+}
+
+.cols:hover {
+background-image: url(./assets/checked.svg);
+}
+
+.cell {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 2px solid #555;
+    box-sizing: border-box;
+    margin: 0 auto;
+    transition: background-color 0.2s ease-in;
+}
+
+.button {
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    width: 200px;
+    color: aliceblue;
+    font-size: 18px;
+    background-color:blue;
+}
